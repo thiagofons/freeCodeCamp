@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Prata&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --bg-color: #EEEEEE;
+    --yellow: #F1C40D;
+    --orange: #FE8C01;
+    --dark-gray: #DDDDDD;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+
+header {
+    width: 100%;
+    top: 0;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+#header-img {
+    width: 20rem;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.nav-link {
+    margin: 1rem;
+    color: var(--black);
+    text-decoration: none;
+} 
+
+main {
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 1.5rem;
+}
+
+.main-content {
+    max-width: 60rem;
+    padding: 2rem 0;
+}
+
+.advantages {
+    padding: 0;
+    margin: 0;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    
+}
+.advantage i {
+    color: var(--orange);
+    margin: 1rem;
+    padding: 5rem;
+    font-size: 3rem;
+    width: 5rem;
+
+}
+.advantage-text {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-justify: justify;
+}
+.advantage-text h2 {
+    margin: 0;
+}
+.advantage-text p {
+    margin: 0;
+}
