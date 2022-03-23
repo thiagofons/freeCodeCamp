@@ -14,24 +14,32 @@
 
 }
 
+/* Body */
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
+    
+    background-color: var(--bg-color);
+}   
+.container {
+    width: 100%;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}   
+}
 
+/* Header */
 header {
     width: 100%;
     top: 0;
-    background-color: white;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem 2rem;
     align-items: center;
+    background-color: var(--bg-color);
 }
 
 #header-img {
@@ -42,8 +50,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-}
+}       
 
 .nav-link {
     margin: 1rem;
@@ -51,6 +58,7 @@ header {
     text-decoration: none;
 } 
 
+/* Main */
 main {
     margin: auto;
     margin-top: 4rem;
@@ -58,14 +66,12 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-
 .main-header {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
 }
-
 .main-header h1 {
     font-size: 1.5rem;
 }
@@ -73,17 +79,18 @@ main {
 #form {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
 }
-
 #email {
     display: flex;
+    
     width: 15rem;
     padding: .25rem .5rem;
     border: 1px solid gray;
     border-radius: .25rem;
 }
-
 #submit {
     margin-top: .5rem;
     width: 10rem;
@@ -91,20 +98,20 @@ main {
     border-radius: .25rem;   
     padding: .5rem 1rem;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 1000;
     background-color: var(--yellow);
 }
-
 .main-content {
+    margin: 0;
     max-width: 60rem;
-    padding: 2rem 0;
+    padding: 0;
 }
 
+/* Advantages */
 .advantages {
     padding: 0;
     margin: 5rem 0;
 }
-
 .advantage {
     display: flex;
     flex-direction: row;
@@ -133,9 +140,51 @@ main {
     margin: 0;
 }
 
+/* Video*/
 
 
 
+/* Prices */
+.prices {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.price {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    border: 1px solid var(--black);
+    text-align: center;
+    align-items: center;
+}
+.price h3 {
+    margin: 0;
+    padding: .5rem 0;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    background-color: var(--dark-gray);
+}
+.price-body h4 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.price-body .specs {
+    list-style-type: none;
+    padding: 0;
+}
+.price-body button {
+    background-color: var(--yellow);
+    border: none;
+    padding: .5rem 1.5rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -144,11 +193,6 @@ footer {
     background-color: var(--dark-gray);
     padding: 0 1rem;
 }
-
-footer div {
-    
-}
-
 footer ul {
     display: flex;
     flex-direction: row;
@@ -156,17 +200,14 @@ footer ul {
     margin: 1.5rem;
     margin-bottom: 0;
 }
-
 footer li {
     list-style-type: none;
     margin: 0 .5rem;
 }
-
 footer a {
     text-decoration: none;
     color: var(--black);
 }
-
 footer p {
     font-size: .8rem;
 }
