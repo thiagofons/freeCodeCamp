@@ -29,6 +29,7 @@ body {
 
 /* Header */
 header {
+    z-index: 1;
     width: 100%;
     top: 0;
     position: fixed;
@@ -62,18 +63,18 @@ header {
 
 /* Main */
 main {
-
-    
     width: 100%;
-    margin: auto;
-    margin-top: 4rem;
+    margin: auto;    
+    margin-top: 5rem;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .main-header {
+    
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -149,6 +150,7 @@ main {
 
 /* Video*/
 .video-player {
+    z-index: 1;
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;
@@ -239,8 +241,7 @@ footer p {
         background-color: var(--bg-color);
     }
     main {
-        position: relative;
-        top: 0;
+        margin-top: 7.5rem;
     }
     
     .prices {
@@ -255,7 +256,11 @@ footer p {
 /* Small */
 @media screen and (max-width: 600px) {
     header {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main {
+        margin-top: 10rem;   
     }
     .advantage .icon {
         display: none;
@@ -263,5 +268,6 @@ footer p {
     .advantage-text {
         text-align: center;
     }
+    
     
 }   
