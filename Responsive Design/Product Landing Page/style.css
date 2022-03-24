@@ -18,12 +18,10 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
-    
     background-color: var(--bg-color);
 }   
 .container {
     width: 100%;
-    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,27 +42,36 @@ header {
 
 #header-img {
     width: 20rem;
+    padding: .5rem;
 }
 
 #nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
 }       
 
 .nav-link {
-    margin: 1rem;
+    margin: 0 1rem;
     color: var(--black);
     text-decoration: none;
+    padding: 0;
 } 
 
 /* Main */
 main {
+
+    
+    width: 100%;
     margin: auto;
     margin-top: 4rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .main-header {
     display: flex;
@@ -118,14 +125,14 @@ main {
     justify-content: center;
     align-items: center;
     height: 8rem;
-    
+    margin: 3rem 0;
 }
-.advantage i {
+.advantage .icon {
+    text-align: center;
     color: var(--orange);
-    margin: 3rem;
+    padding: 7.5rem 7.5rem 7.5rem 5rem;
+    width: 1rem;
     font-size: 3rem;
-    width: 5rem;
-
 }
 .advantage-text {
     margin: 0;
@@ -141,7 +148,11 @@ main {
 }
 
 /* Video*/
-
+.video-player {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
 
 
 /* Prices */
@@ -188,7 +199,7 @@ main {
 footer {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    justify-content: right;
     width: 100%;
     background-color: var(--dark-gray);
     padding: 0 1rem;
@@ -209,5 +220,48 @@ footer a {
     color: var(--black);
 }
 footer p {
+    color: gray;
     font-size: .8rem;
+    text-align: right;
 }
+
+/* Media Queries */
+
+/* Medium */
+@media screen and (max-width: 800px) {
+    header {
+        position: fixed;
+
+    }
+    #nav-bar {
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--bg-color);
+    }
+    main {
+        position: relative;
+        top: 0;
+    }
+    
+    .prices {
+        flex-direction: column;
+        align-items: center;
+    }
+    .price {
+        width: 20rem;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    .advantage .icon {
+        display: none;
+    }
+    .advantage-text {
+        text-align: center;
+    }
+    
+}   
